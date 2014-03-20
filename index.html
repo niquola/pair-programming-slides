@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+
+<title>Pair Programming by nicola</title>
+
+<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+<meta name="author" content="Hakim El Hattab">
+
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<link rel="stylesheet" href="css/reveal.min.css">
+<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+<!-- For syntax highlighting -->
+<link rel="stylesheet" href="lib/css/zenburn.css">
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+if( window.location.search.match( /print-pdf/gi ) ) {
+  var link = document.createElement( 'link' );
+  link.rel = 'stylesheet';
+  link.type = 'text/css';
+  link.href = 'css/print/pdf.css';
+  document.getElementsByTagName( 'head' )[0].appendChild( link );
+}
+</script>
+
+
+<!--[if lt IE 9]>
+<script src="lib/js/html5shiv.js"></script>
+<![endif]-->
+</head>
+
+<body>
+<style>
+.gold { color: gold !important; }
+.green { color: #6f6 !important; }
+.reveal pre { box-shadow: none; }
+</style>
+
+<div class="reveal"><div class="slides">
+    <section>
+      <h1>Pair Programming</h1>
+      <p>
+      <small>by <a href="http://github.com/niquola">niquola</a></small>
+      <br/>
+      <small>ag;)e days 2014</small>
+      </p>
+    </section>
+
+    <section>
+      <h3> Teamlead/health samurai team </h3>
+      <p> @ waveaccess/choice-hospital-systems</p>
+      <p>
+      <a href="http://github.com/niquola">github/niquola</a> /
+      <a href="http://twitter.com/niquola">@niquola</a>
+      </p>
+      <img src="niquola.jpg"/>
+    </section>
+    <section data-markdown>
+      <script type="text/template">
+      ## Kent Beck
+
+      ![kent](kent-beck.jpg)
+
+      </script>
+    </section>
+    <section data-markdown>
+      <script type="text/template">
+      ## XP & agile
+      ## Unit Tests & TDD
+      ## User Story
+      ## Code Smells
+      ## ...
+      </script>
+    </section>
+
+    <section data-markdown>
+      <script type="text/template">
+      ## Pair Programming
+      ![pp](pp.png)
+      </script>
+    </section>
+
+    <section data-markdown>
+      <script type="text/template">
+      ## Extreme Programming
+      ![xp](xp-book.jpg)
+      </script>
+    </section>
+
+    <section data-markdown>
+      <script type="text/template">
+      # Full Time
+      # pairing?
+      </script>
+    </section>
+
+    <section data-markdown>
+      <script type="text/template">
+      ## Adoption
+
+      ![bh](ballhill.gif)
+      </script>
+    </section>
+
+    <section data-markdown>
+      <script type="text/template">
+       ## Quality
+       ***
+       ## Code Ownership
+       ***
+       ## Enjoy
+      </script>
+    </section>
+
+    <section data-markdown>
+      <script type="text/template">
+       # Statistic
+
+       ***
+
+       ### R(pair(petr, addrey)) = R(petr) + R(andrey)
+
+       ***
+
+       # Q & E >
+
+      </script>
+    </section>
+
+    <section data-markdown>
+      <script type="text/template">
+       ## Team Communication
+       ## Problems
+       ![clck](problems.jpg)
+      </script>
+    </section>
+
+    <section data-markdown>
+      <script type="text/template">
+       ## Real working time
+
+       ![clck](clocks.jpg)
+      </script>
+    </section>
+
+    <section data-markdown>
+      <script type="text/template">
+       ## Enjoy
+       ![clck](enjoy.png)
+      </script>
+    </section>
+
+    <section data-markdown>
+      <script type="text/template">
+       ## Remote Pairing
+       ![clck](remote-pair.png)
+      </script>
+    </section>
+
+    <section data-markdown>
+      <script type="text/template">
+       # FIN
+      </script>
+    </section>
+</div></div>
+
+
+<img src="samurai_logo.png" style="width: 50px; box-shadow: 0px 0px 4px #ddd; padding: 4px 8px; border-radius: 15px; position: absolute; top: 30px; right: 30px;"/>
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.min.js"></script>
+
+<script>
+
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+controls: true,
+progress: true,
+history: true,
+center: true,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+// Parallax scrolling
+// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+// parallaxBackgroundSize: '2100px 900px',
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+]
+});
+
+</script>
+
+</body>
+</html>
